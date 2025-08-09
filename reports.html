@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AriaHQ — Reports</title><link rel="stylesheet" href="/styles.css"></head>
+<body>
+  <header class="header">
+  <div class="header-inner">
+    <div class="brand">
+      <div class="logo">A</div>
+      <div class="brand-text"><strong>AriaHQ</strong><span>Financial OS</span></div>
+    </div>
+    <nav class="nav">
+      <a href="/" class="">Dashboard</a>
+      <a href="/reports.html" class="active">Reports</a>
+      <a href="/forecast.html" class="">Forecast</a>
+      <a href="/budget.html" class="">Budget</a>
+      <a href="/approvals.html" class="">Approvals</a>
+    </nav>
+    <div class="cta">
+      <button class="btn" onclick="alert('QBO connect is stubbed in the static preview')">Connect QBO</button>
+      <button class="btn btn-primary" onclick="alert('Deck generator is stubbed for this static preview.')">Generate Deck</button>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <h1 style="margin:0 0 14px">Reports</h1>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px">
+    <div class="card"><strong>Monthly Executive Report</strong><p>KPIs, trends, AI summary, and actions.</p><div style="height:120px;background:#f6f8f9;border-radius:12px;margin-top:10px;display:grid;place-items:center;color:#98a0a6">Preview</div><div style="margin-top:10px;display:flex;gap:8px"><button class="btn">Preview</button><button class="btn btn-primary">Export PDF</button></div></div>
+    <div class="card"><strong>Board Deck</strong><p>Slides with charts + narrative.</p><div style="height:120px;background:#f6f8f9;border-radius:12px;margin-top:10px;display:grid;place-items:center;color:#98a0a6">Slides</div><div style="margin-top:10px;display:flex;gap:8px"><button class="btn">Preview</button><button class="btn btn-primary">Export PPTX</button></div></div>
+    <div class="card"><strong>Department Scorecards</strong><p>Marketing, Sales, Ops.</p><div style="height:120px;background:#f6f8f9;border-radius:12px;margin-top:10px;display:grid;place-items:center;color:#98a0a6">Scorecards</div><div style="margin-top:10px;display:flex;gap:8px"><button class="btn">Preview</button><button class="btn btn-primary">Schedule</button></div></div>
+  </div>
+</main>
+
+  <footer class="footer">
+  <div class="footer-inner"><span>Static preview — visual only.</span><span>© AriaHQ</span></div>
+</footer>
+<!-- Side-dock chat -->
+<div class="chat-dock" id="chatDock">
+  <div class="chat-header"><div class="chat-dot"></div><strong style="margin-left:6px">Aria</strong><span style="margin-left:6px;color:var(--muted)">online</span></div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="chat-input"><input id="chatInput" placeholder="Ask Aria…"><button id="chatSend">Send</button></div>
+</div>
+<button class="chat-minimize" id="chatToggle">Chat</button>
+<script src="/chat.js"></script>
+</body></html>

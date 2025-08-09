@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AriaHQ — Dashboard</title><link rel="stylesheet" href="/styles.css"></head>
+<body>
+  <header class="header">
+  <div class="header-inner">
+    <div class="brand">
+      <div class="logo">A</div>
+      <div class="brand-text"><strong>AriaHQ</strong><span>Financial OS</span></div>
+    </div>
+    <nav class="nav">
+      <a href="/" class="active">Dashboard</a>
+      <a href="/reports.html" class="">Reports</a>
+      <a href="/forecast.html" class="">Forecast</a>
+      <a href="/budget.html" class="">Budget</a>
+      <a href="/approvals.html" class="">Approvals</a>
+    </nav>
+    <div class="cta">
+      <button class="btn" onclick="alert('QBO connect is stubbed in the static preview')">Connect QBO</button>
+      <button class="btn btn-primary" onclick="alert('Deck generator is stubbed for this static preview.')">Generate Deck</button>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <section class="hero">
+    <div class="copy card">
+      <h1>Your financial pulse — at a glance</h1>
+      <p>Fewer widgets, more clarity. A single hero chart, two KPIs, and the next three things that matter.</p>
+      <div class="kpis">
+        <div class="kpi card">
+          <div class="kpi-head"><strong>Revenue (MTD)</strong><span class="badge up">+8.2%</span></div>
+          <div class="value">$482,300</div>
+          <svg class="spark" viewBox="0 0 300 44" preserveAspectRatio="none"><polyline fill="none" stroke="#10A37F" stroke-width="3" points="0,36 40,35 80,34 120,31 160,26 200,22 240,18 280,15 300,14"/></svg>
+        </div>
+        <div class="kpi card">
+          <div class="kpi-head"><strong>Gross Margin</strong><span class="badge neutral">Target 56–60%</span></div>
+          <div class="value">58.4%</div>
+          <svg class="spark" viewBox="0 0 300 44" preserveAspectRatio="none"><rect width="300" height="44" fill="#f6f8f9"/><polyline fill="none" stroke="#1A7F64" stroke-width="3" points="0,28 40,28 80,27 120,25 160,24 200,23 240,22 280,21 300,20"/></svg>
+        </div>
+      </div>
+    </div>
+    <div class="figure card">
+      <div class="fig-head"><div class="legend"><span><i class="dot rev"></i> Revenue</span><span><i class="dot gm"></i> GM%</span></div>
+      <div class="fig-cta"><button class="btn sm">1M</button><button class="btn sm active">3M</button><button class="btn sm">12M</button></div></div>
+      <svg viewBox="0 0 680 360" preserveAspectRatio="none">
+        <defs><linearGradient id="rev" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#10A37F" stop-opacity=".35"/><stop offset="1" stop-color="#10A37F" stop-opacity="0"/></linearGradient></defs>
+        <path d="M0,300 L60,295 L120,288 L180,270 L240,248 L300,220 L360,198 L420,184 L480,170 L540,160 L600,150 L680,142 L680,360 L0,360 Z" fill="url(#rev)"/>
+        <polyline fill="none" stroke="#1A7F64" stroke-width="3" points="0,220 60,220 120,215 180,210 240,206 300,202 360,200 420,198 480,196 540,195 600,194 680,193"/>
+        <line x1="0" y1="340" x2="680" y2="340" stroke="#eef0f2"/><line x1="0" y1="260" x2="680" y2="260" stroke="#f3f5f6"/><line x1="0" y1="180" x2="680" y2="180" stroke="#f3f5f6"/>
+      </svg>
+      <div class="fig-meta"><div class="note">Trend improving — projected +$94k this quarter</div><div class="actions"><button class="btn">Run Upside</button><button class="btn">Run Downside</button><button class="btn btn-primary">New Scenario</button></div></div>
+    </div>
+  </section>
+</main>
+
+  <footer class="footer">
+  <div class="footer-inner"><span>Static preview — visual only.</span><span>© AriaHQ</span></div>
+</footer>
+<!-- Side-dock chat -->
+<div class="chat-dock" id="chatDock">
+  <div class="chat-header"><div class="chat-dot"></div><strong style="margin-left:6px">Aria</strong><span style="margin-left:6px;color:var(--muted)">online</span></div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="chat-input"><input id="chatInput" placeholder="Ask Aria…"><button id="chatSend">Send</button></div>
+</div>
+<button class="chat-minimize" id="chatToggle">Chat</button>
+<script src="/chat.js"></script>
+</body></html>
